@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: cvscanner-postgres
+    environment:
+      POSTGRES_DB: cvscanner
+      POSTGRES_USER: mirsaleh
+      POSTGRES_PASSWORD: mirsaleh
+    ports:
+      - "2222:5432"
+
